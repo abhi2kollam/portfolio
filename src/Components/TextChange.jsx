@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 
-const texts = ["Hi, I'm Abhilash Pillai", "Hi, I'm a Web Developer", "Hi, I'm a Node.js Developer"];
+const texts = [
+  "Web Developer",
+  "Node.js Developer",
+  "Husband",
+  "Father",
+  "Mentor",
+  "Tech Enthusiast"
+];
 
 const TextChange = () => {
   const [currentText, setCurrentText] = useState("");
@@ -11,14 +18,14 @@ const TextChange = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentText(texts[index].substring(0, endValue));
-      
+
       // Forward text writing
       if (isForward) {
         setEndValue((prev) => prev + 1);
         if (endValue === texts[index].length) {
           setIsForward(false); // Start deleting when the full text is displayed
         }
-      } 
+      }
       // Backward text deletion
       else {
         setEndValue((prev) => prev - 1);
@@ -32,7 +39,11 @@ const TextChange = () => {
     return () => clearInterval(intervalId);
   }, [endValue, isForward, index]);
 
-  return <div className="transition ease duration-300">{currentText}</div>;
+  return (
+    <>
+      <span className="transition ease duration-300 logo">{currentText}</span>|
+    </>
+  );
 };
 
 export default TextChange;

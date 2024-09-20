@@ -4,4 +4,28 @@
 
 * {
   scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+}
+.logo {
+  background: linear-gradient(to right, red, orange);
+  background-clip: text;
+  color: transparent;
+}
+.avatar-img {
+  animation: upDown 1.5s linear infinite;
+}
+.avatar-img:hover {
+  transform: scale(1.5);
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

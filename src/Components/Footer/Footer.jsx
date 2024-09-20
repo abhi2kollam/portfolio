@@ -1,6 +1,6 @@
 import React from "react";
 import { MdOutlineEmail } from "react-icons/md";
-import { CiLinkedin } from "react-icons/ci";
+import { FaLinkedin  } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
@@ -22,12 +22,12 @@ const Footer = () => {
           abhi2kollam@gmail.com
         </li>
         <li className="flex gap-1 items-center">
-          <CiLinkedin />
-          linkedin.com/in/abhilash-k-pillai-a0546396/
+          <FaLinkedin  />
+          abhilash-k-pillai-a0546396
         </li>
         <li className="flex gap-1 items-center">
           <FaGithub />
-          github.com/abhi2kollam
+         abhi2kollam
         </li>
       </ul>
     </div>

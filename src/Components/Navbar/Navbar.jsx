@@ -5,7 +5,8 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(true);
   return (
     <nav className="flex flex-wrap justify-between md:items-center text-white px-10 pt-6 md:px-20">
-      <span className="text-xl font-bold tracking-wide">Portfolio</span>
+      <span className="text-xl font-bold tracking-wide ">
+        <span className="logo">Abhilash</span> Pillai</span>
 
       <ul
         className={`${
@@ -22,7 +23,7 @@ const Navbar = () => {
             Experience
           </li>
         </a>
-        <a href="#Projects" hidden>
+        <a href="#Projects">
           <li className="text-md transition-all duration-300 p-1 md:p-0">
             Projects
           </li>
@@ -39,7 +40,7 @@ const Navbar = () => {
           className="md:hidden absolute right-10 top-6 transition-all duration-300"
           onClick={() => {
             openMenu(true);
-            setShowMenu(true);
+            setShowMenu(false);
           }}
         />
       ) : (
@@ -47,7 +48,7 @@ const Navbar = () => {
           size={30}
           onClick={() => {
             openMenu(false);
-            setShowMenu(false);
+            setShowMenu(true);
           }}
           className="md:hidden absolute right-10 top-6 transition-all duration-300"
         />

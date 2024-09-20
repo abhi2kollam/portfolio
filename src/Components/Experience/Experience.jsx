@@ -1,6 +1,17 @@
 import { FaCss3, FaHtml5, FaJs, FaReact, FaNode } from "react-icons/fa";
-import { SiRedis, SiSencha } from "react-icons/si";
-import { SiMongodb, SiAngular, SiTypescript, SiNestjs } from "react-icons/si";
+import { SiSencha } from "react-icons/si";
+import { DiBootstrap, DiSass } from "react-icons/di";
+import { IoLogoFirebase } from "react-icons/io5";
+import {
+  SiAngular,
+  SiTypescript,
+  SiNestjs,
+  SiWebassembly,
+  SiNx,
+  SiPwa,
+  SiJest,
+  SiWebpack,
+} from "react-icons/si";
 const Experience = () => {
   return (
     <div id="Experience" className="p-10 md:p-24">
@@ -17,7 +28,7 @@ const Experience = () => {
             <FaJs color="#F7DF1E" size={50} />
           </span>
           <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <SiTypescript color="#F7DF1E" size={50} />
+            <SiTypescript color="#FFF" size={50} />
           </span>
           <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
             <SiAngular color="#c50836" size={50} />
@@ -32,54 +43,94 @@ const Experience = () => {
             <SiNestjs color="#ea2858" size={50} />
           </span>
           <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <SiMongodb color="#47A248" size={50} />
+            <DiSass color="#cf649a" size={50} />
           </span>
           <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
-            <SiRedis color="#FF4438" size={50} />
+            <DiBootstrap color="#722ef9" size={50} />
+          </span>
+          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
+            <SiWebassembly color="#722ef9" size={50} />
+          </span>
+          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
+            <SiNx color="#FFF" size={50} />
+          </span>
+          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
+            <IoLogoFirebase color="#ff9b00" size={50} />
+          </span>
+          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
+            <SiPwa color="#FF4438" size={50} />
+          </span>
+          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
+            <SiJest color="#9a405b" size={50} />
+          </span>
+          <span className="p-3 bg-zinc-950 flex items-center rounded-2xl">
+            <SiWebpack color="#1b74ba" size={50} />
           </span>
         </div>
         <div>
           <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg p-4 items-center">
-            <a href="https://www.hrblock.com/" >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="#02ad4e" width="40px" height="40px" role="img" aria-label="H and R Block" data-di-res-id="cb8c726e-4668d67f" data-di-rand="1726824464668">
+            <a href="https://www.hrblock.com/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 56 56"
+                fill="#02ad4e"
+                width="40px"
+                height="40px"
+                role="img"
+                aria-label="H and R Block"
+                data-di-res-id="cb8c726e-4668d67f"
+                data-di-rand="1726824464668"
+              >
                 <path d="M0 0h56v56H0V0zm9.7 33.1H7.2v-3.5h-3v9.7h3v-3.5h2.5v3.5h3.1v-9.7H9.7v3.5zM22 37.3c.3-.6.4-1.3.4-1.9v-1.5h-2.1v1.4L18 32.8c-.2-.3-.4-.5-.4-.8 0-.4.3-.6.7-.6.4 0 .7.3.7.7v.5h2.3V32c0-1.5-1.3-2.5-3.1-2.5-1.9 0-3.2 1-3.2 2.5 0 .4.1 1.1.8 1.7-.9.4-1.8 1.3-1.8 2.7 0 1.9 1.5 3.2 4.2 3.2.9 0 1.8-.3 2.4-.7l.4.5h2.7L22 37.3zm-3.7.2c-.7 0-1.6-.4-1.6-1.3 0-.5.3-.9.7-1.1 0 0 1.6 1.8 1.9 2.1-.2.2-.6.3-1 .3zm9.3-.7h.9l1.5 2.5h3.5l-1.9-3.1c1-.6 1.7-1.7 1.7-3.1 0-2.1-1.3-3.6-3.8-3.6h-4.9v9.7h3v-2.4zm0-4.8h1.5c.7 0 1.1.5 1.1 1.2s-.4 1.2-1.1 1.2h-1.5V32zM10.8 46.7c.8-.4 1.3-1.2 1.3-2.2C12.1 43 11 42 9.2 42h-5v9.7h5.1c2.2 0 3.4-1.1 3.4-2.8 0-1.1-.7-1.9-1.9-2.2zm-3.7-2.4h1.4c.4 0 .7.3.7.7 0 .5-.3.8-.7.8H7.1v-1.5zm2 5.2h-2v-1.6h2c.5 0 .8.4.8.8s-.3.8-.8.8zM17 42h-3v9.7h6.9v-2.5H17V42zm9.4-.2c-3 0-4.6 1.8-4.6 4.4v1.2c0 2.6 1.6 4.4 4.6 4.4S31 50 31 47.4v-1.2c0-2.6-1.6-4.4-4.6-4.4zm1.6 5.9c0 1.1-.6 1.7-1.6 1.7s-1.6-.6-1.6-1.7v-1.6c0-1.1.6-1.7 1.6-1.7s1.6.6 1.6 1.7v1.6zm8.6-3.3c1.1 0 1.5.7 1.5 1.4H41c-.1-2.2-1.6-4-4.3-4-3.1 0-4.6 1.8-4.6 4.4v1.3c0 2.6 1.5 4.4 4.6 4.4 2.7 0 4.3-1.8 4.3-4h-2.9c-.1.7-.4 1.4-1.5 1.4-1 0-1.5-.7-1.5-1.7v-1.5c0-1.1.5-1.7 1.5-1.7zM51.3 42h-3.4l-2 3.4h-.2V42h-3v9.7h3v-4h.2l2 4h3.6l-2.8-5.3 2.6-4.4zm1.4.3h-.3v.7h.2v-.2l.1.2h.3l-.1-.2c0-.1.1-.2.1-.3 0-.2-.1-.2-.3-.2zm0 .3l-.1-.1.1.1c0-.1 0-.1 0 0zm-.1-.8c-.5 0-.8.4-.8.8s.3.8.8.8.8-.4.8-.8c.1-.4-.3-.8-.8-.8zm0 1.4c-.4 0-.6-.3-.6-.6 0-.4.2-.6.6-.6.4 0 .6.3.6.6.1.4-.2.6-.6.6z"></path>
               </svg>
             </a>
             <span className="text-white">
-              <h2 className="leading-tight">Senior Technology Specialist , H&R Block</h2>
+              <h2 className="leading-tight">
+                Senior Technology Specialist , H&R Block
+              </h2>
               <p className="text-sm leading-tight font-thin">
                 Sept 2018 - Present
               </p>
               <ul className="text-sm p-2">
-                <li>- Work as software developer</li>
-                <li>- Senior SDE-developer</li>
+                <li>- Worked as Senior Software Engineer</li>
+                <li>- Technical Lead</li>
+                <li>- Senior Technology Specialist</li>
               </ul>
             </span>
           </div>
           <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            <img width="48" src="https://media.licdn.com/dms/image/v2/C560BAQH1u_3VYK88yA/company-logo_100_100/company-logo_100_100/0/1679572102869/carestack_logo?e=1735171200&amp;v=beta&amp;t=oJ7Us50hokV8GfP6LalmWoTtGNpD0cKQnjggN4V1mjA" loading="lazy" height="48" alt="CareStack™ - Dental Practice Management logo" id="ember956"></img>
+            <img
+              width="48"
+              src="https://media.licdn.com/dms/image/v2/C560BAQH1u_3VYK88yA/company-logo_100_100/company-logo_100_100/0/1679572102869/carestack_logo?e=1735171200&amp;v=beta&amp;t=oJ7Us50hokV8GfP6LalmWoTtGNpD0cKQnjggN4V1mjA"
+              loading="lazy"
+              height="48"
+              alt="CareStack™ - Dental Practice Management logo"
+              id="ember956"
+            ></img>
             <span className="text-white">
               <h2 className="leading-tight">
-                Software Engineer, CareStack™ - Dental Practice Management</h2>
+                Software Engineer, CareStack™ - Dental Practice Management
+              </h2>
               <p className="text-sm leading-tight font-thin">
                 Aug 2015 - May 2018
               </p>
               <ul className="text-sm p-2">
-                <li>- Work as software developer.</li>
-                <li>- Senior SDE-developer</li>
+                <li>- Worked as Software Engineer.</li>
+                <li></li>
               </ul>
             </span>
           </div>
           <div className="flex gap-10 bg-slate-950 bg-opacity-45 mt-4 rounded-lg  p-4 items-center">
-            <SiSencha  color="#95c93d" size={50} />
+            <SiSencha color="#95c93d" size={50} />
             <span className="text-white">
-              <h2 className="leading-tight">Sencha Developer, Ariva Med Data info tech</h2>
+              <h2 className="leading-tight">
+                Sencha Developer, Ariva Med Data info tech
+              </h2>
               <p className="text-sm leading-tight font-thin">
                 Nov 2013 - Aug 2015
               </p>
               <ul className="text-sm p-2">
-                <li>- Work as software developer.</li>
-                <li>- Senior SDE-developer</li>
+                <li>- Worked as Associate Software Developer.</li>
               </ul>
             </span>
           </div>
