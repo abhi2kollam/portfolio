@@ -3,9 +3,9 @@ import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
-    <div id="Projects" className="p-10 md:p-24 text-white ">
+    <div id="projects" className="p-10 md:p-24 text-white ">
       <h1 className="text-2xl md:text-4xl text-white font-bold">Projects</h1>
-      <div className="py-12 px-8 flex flex-wrap gap-5">
+      <div className="py-12 px-8 flex flex-wrap gap-5 justify-center">
         <ProjectCard
           title="Blood Bank"
           main="this is a bllod bank portal created in angular with firebase"

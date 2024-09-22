@@ -12,7 +12,8 @@
   color: transparent;
 }
 .avatar-img {
-  animation: upDown 1.5s linear infinite;
+  animation: upDown 1.5s linear 3s infinite;
+  filter: drop-shadow(2px 4px 6px white);
 }
 .avatar-img:hover {
   transform: scale(1.5);
@@ -28,4 +29,36 @@
   100% {
     transform: translateY(0);
   }
+}
+.nav-bar {
+  a {
+    position: relative;
+  }
+  a.active::after,
+  a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, red, orange);
+    left: 0;
+    border-radius: 2px;
+  }
+  @media (max-width: 768px) {
+    a.active::after {
+      bottom: 0;
+    }
+  }
+}
+.img-box span {
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.img-box span:hover {
+  transform: scale(1.1);
+}
+
+.img-box:hover > span:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9);
 }

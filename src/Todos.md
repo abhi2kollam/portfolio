@@ -5,3 +5,4 @@
 7. embed resume
 8. set proper project details
 9. unicode symbol instead of - in experrince
+10. testimoniels
