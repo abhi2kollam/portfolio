@@ -43,9 +43,8 @@ const Navbar = () => {
         <span className="logo">Abhilash</span> Pillai
       </span>
       <ul
-        className={`${
-          menu ? "block" : "hidden"
-        }     mx-24 p-y2 mt-4 font-semibold md:mt-5 bg-black px-2 rounded-xl bg-opacity-30 md:border-none md:bg-transparent md:static md:mx-0 md:flex gap-6`}
+        className={`${menu ? "block" : "hidden"
+          }     mx-24 p-y2 mt-4 font-semibold md:mt-5 bg-black px-2 rounded-xl bg-opacity-30 md:border-none md:bg-transparent md:static md:mx-0 md:flex gap-6`}
       >
         {menuList?.map((menu) => (
           <a
@@ -59,7 +58,19 @@ const Navbar = () => {
           </a>
         ))}
       </ul>
-      {showMenu ? (
+      <div id="nav-icon2"  className={`md:hidden cursor-pointer absolute right-10 top-6 transition-all duration-300 ${!showMenu ? 'open' : ''}`} onClick={() => {
+        openMenu(!menu);
+        setShowMenu(menu);
+      }}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      {/* {showMenu ? (
+       
         <RiMenu2Line
           size={30}
           className="md:hidden cursor-pointer absolute right-10 top-6 transition-all duration-300"
@@ -77,7 +88,7 @@ const Navbar = () => {
           }}
           className="md:hidden cursor-pointer absolute right-10 top-6 transition-all duration-300"
         />
-      )}
+      )} */}
     </nav>
   );
 };

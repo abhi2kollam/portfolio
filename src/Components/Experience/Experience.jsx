@@ -1,37 +1,38 @@
 import { FaCss3, FaHtml5, FaJs, FaReact, FaNode } from "react-icons/fa";
-import { SiSencha } from "react-icons/si";
-import { DiBootstrap, DiSass } from "react-icons/di";
-import { IoLogoFirebase } from "react-icons/io5";
-import { BsFiletypeSql  } from "react-icons/bs";
+import { SiSencha, SiTailwindcss } from "react-icons/si";
+import { DiBootstrap, DiSass, DiMsqlServer } from "react-icons/di";
 import {
-  SiAngular,
   SiTypescript,
   SiNestjs,
-  SiWebassembly,
   SiNx,
   SiPwa,
   SiJest,
   SiWebpack,
 } from "react-icons/si";
+import { VscSettingsGear } from "react-icons/vsc";
 const Experience = () => {
   const icons = [
     { icon: FaHtml5, color: "#E34F26", text: "HTML 5" },
     { icon: FaCss3, color: "#1572B6", text: "CSS 3" },
     { icon: FaJs, color: "#F7DF1E", text: "Javascript" },
     { icon: SiTypescript, color: "#FFF", text: "Typescript" },
-    { icon: SiAngular, color: "#c50836", text: "Angular" },
+    { type: 'img', icon: 'src/assets/angular.gif', text: "Angular" },
     { icon: FaReact, color: "#61DAFB", text: "React" },
     { icon: FaNode, color: "#417e38", text: "Node js" },
     { icon: SiNestjs, color: "#ea2858", text: "Nest js" },
     { icon: DiSass, color: "#cf649a", text: "SASS" },
     { icon: DiBootstrap, color: "#722ef9", text: "Bootstrap" },
-    { icon: SiWebassembly, color: "#722ef9", text: "Web Assembly" },
+    { type: 'img', icon: 'src/assets/WebAssembly.svg', text: "Web Assembly" },
     { icon: SiNx, color: "#FFF", text: "Nx Workspace" },
-    { icon: IoLogoFirebase, color: "#ff9b00", text: "Firebase" },
+    { type: 'img', icon: 'src/assets/firebase.png', text: "Firebase" },
     { icon: SiPwa, color: "#FF4438", text: "PWA" },
     { icon: SiJest, color: "#9a405b", text: "Jest" },
     { icon: SiWebpack, color: "#1b74ba", text: "Webpack" },
-    { icon: BsFiletypeSql, color: "#1b74ba", text: "SQL" },
+    { icon: DiMsqlServer, text: "MS SQL Server", color: '#fff' },
+    { type: 'img', icon: 'src/assets/webrtc.png', text: "Webrtc" },
+    { icon: VscSettingsGear, color: "#E34F26", text: "Web Workers" },
+    { icon: SiTailwindcss, color: "#0ea5e9", text: "Tailwindcss" },
+    { type: 'img', icon: 'src/assets/pdfjs.svg', color: "#0ea5e9", text: "PdfJs" },
   ];
   return (
     <div id="experience" className="p-10 md:p-24 ">
@@ -45,7 +46,7 @@ const Experience = () => {
               className="exp-icon p-3 bg-zinc-950 flex items-center rounded-2xl anim-scroll"
               style={{ color: item.color }}
             >
-              <item.icon size={50} />
+              {item.type === `img` ? <img src={item.icon} /> : <item.icon size={50} />}
             </span>
           ))}
         </div>
